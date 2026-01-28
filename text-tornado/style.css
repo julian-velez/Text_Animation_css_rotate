@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 290px;
+}
+
+.text-tornado {
+    font-size: 126px;
+    position: relative;
+    color: white;
+  }
+  
+  .text-tornado .char {
+    display: inline-block;
+    animation: textTornado 1s infinite;
+  }
+  
+  @keyframes textTornado {
+    0% {
+      transform: rotate(0deg) translateY(-20px);
+    }
+    50% {
+      transform: rotate(360deg) translateY(20px);
+    }
+    100% {
+      transform: rotate(720deg) translateY(-20px);
+    }
+  }
+  
